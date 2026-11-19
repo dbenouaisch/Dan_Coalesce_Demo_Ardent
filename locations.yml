@@ -1,0 +1,8 @@
+defaultStorageMapping: null
+fileVersion: 1
+locations:
+  - RAW_MAISON
+  - RAW_MODE
+  - SAMPLE
+  - TARGET
+  - WORK
