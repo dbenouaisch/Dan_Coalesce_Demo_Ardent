@@ -1,0 +1,192 @@
+fileVersion: 1
+id: 9c513b8c-63eb-4f6e-8f96-72cf475fe47a
+name: STG_MODE_SALES_ORDER_LINES
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dd2d8ce1-7b17-462e-afd7-acb22399cb09
+          stepCounter: 9c513b8c-63eb-4f6e-8f96-72cf475fe47a
+        config: {}
+        dataType: NUMBER(18,0)
+        description: ""
+        name: LINE_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dfa5edca-46d6-4e1e-8e88-9407bc1eba0c
+                stepCounter: 6a13e901-05ac-4b97-863b-f065b50674d9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: abb094fb-d5bc-4f4d-b101-6d37a5d15c61
+          stepCounter: 9c513b8c-63eb-4f6e-8f96-72cf475fe47a
+        config: {}
+        dataType: NUMBER(6,0)
+        description: ""
+        name: ORDER_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0d772620-36c3-44e1-8fb4-a21c1ffb9407
+                stepCounter: 6a13e901-05ac-4b97-863b-f065b50674d9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0f181a15-9dab-4984-8987-bc6070739dac
+          stepCounter: 9c513b8c-63eb-4f6e-8f96-72cf475fe47a
+        config: {}
+        dataType: NUMBER(3,0)
+        description: ""
+        name: PRODUCT_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 570b074a-9788-4f95-a9a8-37cac9f9dbf7
+                stepCounter: 6a13e901-05ac-4b97-863b-f065b50674d9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cbb9de1f-cc24-45dd-afaa-3b64ac9829ff
+          stepCounter: 9c513b8c-63eb-4f6e-8f96-72cf475fe47a
+        config: {}
+        dataType: NUMBER(2,0)
+        description: ""
+        name: QTY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 84c18f51-3cfa-4e6e-bd79-6a1f8053b0eb
+                stepCounter: 6a13e901-05ac-4b97-863b-f065b50674d9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3beedffc-a146-4aa5-a0e5-9d62c98920b4
+          stepCounter: 9c513b8c-63eb-4f6e-8f96-72cf475fe47a
+        config: {}
+        dataType: NUMBER(4,0)
+        description: ""
+        name: UNIT_PRICE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5635235c-4d2c-4bb6-b1b0-6a4f37fc1fab
+                stepCounter: 6a13e901-05ac-4b97-863b-f065b50674d9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cdc82834-97a6-4b5a-b047-d937a33bfcad
+          stepCounter: 9c513b8c-63eb-4f6e-8f96-72cf475fe47a
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: DISCOUNT_PCT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a451b1d5-2a36-48c9-8e76-7598124a190f
+                stepCounter: 6a13e901-05ac-4b97-863b-f065b50674d9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 41545ee6-b33d-4a1d-a43d-ccc7976dc25d
+          stepCounter: 9c513b8c-63eb-4f6e-8f96-72cf475fe47a
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: IS_RETURN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: deff53f9-543f-42ef-a4d4-39bcfc47524e
+                stepCounter: 6a13e901-05ac-4b97-863b-f065b50674d9
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ba4448b8-45b2-4e64-8192-d3e194eae0af
+          stepCounter: 9c513b8c-63eb-4f6e-8f96-72cf475fe47a
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: LOAD_TS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2b32ab48-07d4-4474-9c38-e40126a166cd
+          stepCounter: 9c513b8c-63eb-4f6e-8f96-72cf475fe47a
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        isSystemLoadedBy: true
+        name: LOADED_BY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CURRENT_USER()
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 938ade06-8123-429f-8663-84f9f63252e2
+          stepCounter: 9c513b8c-63eb-4f6e-8f96-72cf475fe47a
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: BRAND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "'MODE'"
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          SALES_ORDER_LINES: 6a13e901-05ac-4b97-863b-f065b50674d9
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: RAW_MODE
+            nodeName: SALES_ORDER_LINES
+        join:
+          joinCondition: FROM {{ ref('RAW_MODE', 'SALES_ORDER_LINES') }} "SALES_ORDER_LINES"
+        name: STG_MODE_SALES_ORDER_LINES
+        noLinkRefs: []
+  name: STG_MODE_SALES_ORDER_LINES
+  overrideSQL: false
+  schema: ""
+  sqlType: "1"
+  type: sql
+  version: 1
+type: Node
