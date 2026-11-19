@@ -1,0 +1,20 @@
+fileVersion: 1
+id: "2"
+mappingDefinitions:
+  RAW_MAISON:
+    database: ""
+    schema: ""
+  RAW_MODE:
+    database: ""
+    schema: ""
+  SAMPLE:
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF1
+  TARGET:
+    database: ""
+    schema: ""
+  WORK:
+    database: ""
+    schema: ""
+name: Testing
+type: Environment

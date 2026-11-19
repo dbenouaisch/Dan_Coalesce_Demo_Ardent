@@ -1,0 +1,168 @@
+fileVersion: 1
+id: d6f02595-90a8-407d-9ea8-c1cc03f3021b
+name: ARTICLES
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: RAW_MAISON
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e723dcc2-d718-4eaf-8e17-99d327fe46ee
+          stepCounter: d6f02595-90a8-407d-9ea8-c1cc03f3021b
+        config: {}
+        dataType: NUMBER(18,0)
+        defaultValue: ""
+        description: ""
+        name: ID_ARTICLE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2a31a0b2-cf71-4b16-a4e2-1649cb7cc45e
+          stepCounter: d6f02595-90a8-407d-9ea8-c1cc03f3021b
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: REF_SKU
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fa7b2f1a-c026-4330-b971-5b6608d2c7c0
+          stepCounter: d6f02595-90a8-407d-9ea8-c1cc03f3021b
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: LIBELLE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f1d3d319-e8ce-4eec-81f2-a81b5da6c901
+          stepCounter: d6f02595-90a8-407d-9ea8-c1cc03f3021b
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: FAMILLE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1d036d85-f07b-4569-bf42-acbc42c2dd36
+          stepCounter: d6f02595-90a8-407d-9ea8-c1cc03f3021b
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: SOUS_FAMILLE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1bf915de-d150-4b91-8ddc-bfb9aa4f0407
+          stepCounter: d6f02595-90a8-407d-9ea8-c1cc03f3021b
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PRIX_VENTE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fe6f1a33-92ed-412d-bd7a-96d5c0aaface
+          stepCounter: d6f02595-90a8-407d-9ea8-c1cc03f3021b
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: DATE_MAJ
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a80c3170-96da-452e-a8e9-e1a35647079d
+          stepCounter: d6f02595-90a8-407d-9ea8-c1cc03f3021b
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PRIX_ACHAT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: ARTICLES
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

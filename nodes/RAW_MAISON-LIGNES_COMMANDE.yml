@@ -1,0 +1,149 @@
+fileVersion: 1
+id: 1eaadf4d-9bf7-41b5-ab6f-8939c6f00827
+name: LIGNES_COMMANDE
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: RAW_MAISON
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 168cb837-d9a4-4111-b0ab-78a353e122e8
+          stepCounter: 1eaadf4d-9bf7-41b5-ab6f-8939c6f00827
+        config: {}
+        dataType: NUMBER(18,0)
+        defaultValue: ""
+        description: ""
+        name: ID_LIGNE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 01a5431f-dac2-4568-a80d-6a7f02933bf4
+          stepCounter: 1eaadf4d-9bf7-41b5-ab6f-8939c6f00827
+        config: {}
+        dataType: NUMBER(5,0)
+        defaultValue: ""
+        description: ""
+        name: NUM_COMMANDE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ade6d93f-8bc7-4948-a340-43a4826c26cf
+          stepCounter: 1eaadf4d-9bf7-41b5-ab6f-8939c6f00827
+        config: {}
+        dataType: NUMBER(3,0)
+        defaultValue: ""
+        description: ""
+        name: ID_ARTICLE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 42808ee0-4725-4510-b98e-a72c83a55005
+          stepCounter: 1eaadf4d-9bf7-41b5-ab6f-8939c6f00827
+        config: {}
+        dataType: NUMBER(2,0)
+        defaultValue: ""
+        description: ""
+        name: QUANTITE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e821a6b4-e676-4e5f-9885-b0d23bed60fc
+          stepCounter: 1eaadf4d-9bf7-41b5-ab6f-8939c6f00827
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PRIX_UNITAIRE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c3fbad7d-6656-4dea-bade-ee3e27b66e32
+          stepCounter: 1eaadf4d-9bf7-41b5-ab6f-8939c6f00827
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: REMISE_PCT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b9f29477-88a4-4cec-bede-acd2b6c6247e
+          stepCounter: 1eaadf4d-9bf7-41b5-ab6f-8939c6f00827
+        config: {}
+        dataType: VARCHAR(1)
+        defaultValue: ""
+        description: ""
+        name: EST_RETOUR
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: LIGNES_COMMANDE
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

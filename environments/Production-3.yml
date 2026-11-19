@@ -1,0 +1,20 @@
+fileVersion: 1
+id: "3"
+mappingDefinitions:
+  RAW_MAISON:
+    database: ARDENT_DEMO
+    schema: RAW_MAISON
+  RAW_MODE:
+    database: ARDENT_DEMO
+    schema: RAW_MODE
+  SAMPLE:
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF1
+  TARGET:
+    database: ARDENT_DEMO
+    schema: ANALYTICS_PROD
+  WORK:
+    database: PC_COALESCE_DB
+    schema: PUBLIC
+name: Production
+type: Environment

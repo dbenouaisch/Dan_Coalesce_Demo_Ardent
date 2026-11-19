@@ -1,0 +1,130 @@
+fileVersion: 1
+id: f655e3bc-5227-44b4-b000-07d82c3fb2d4
+name: CLIENTS
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: RAW_MAISON
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 52878337-f2b9-4a63-9e6f-255e630d06d1
+          stepCounter: f655e3bc-5227-44b4-b000-07d82c3fb2d4
+        config: {}
+        dataType: NUMBER(18,0)
+        defaultValue: ""
+        description: ""
+        name: ID_CLIENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b9798b62-9e3b-41a1-b18f-c2e2c8e11a26
+          stepCounter: f655e3bc-5227-44b4-b000-07d82c3fb2d4
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: COURRIEL
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 76eef16b-555c-4941-b399-3ec3c7312f01
+          stepCounter: f655e3bc-5227-44b4-b000-07d82c3fb2d4
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PRENOM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8a02c791-b65c-4f5b-a103-43fe83b3bda0
+          stepCounter: f655e3bc-5227-44b4-b000-07d82c3fb2d4
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: NOM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: af4d600c-aab9-4165-9e3e-0e2db0613736
+          stepCounter: f655e3bc-5227-44b4-b000-07d82c3fb2d4
+        config: {}
+        dataType: VARCHAR(2)
+        defaultValue: ""
+        description: ""
+        name: PAYS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b8c04fc7-b8e1-4216-8afc-a088189977a3
+          stepCounter: f655e3bc-5227-44b4-b000-07d82c3fb2d4
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: DATE_CREATION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: CLIENTS
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

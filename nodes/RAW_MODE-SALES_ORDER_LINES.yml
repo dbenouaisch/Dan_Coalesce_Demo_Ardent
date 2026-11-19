@@ -1,0 +1,149 @@
+fileVersion: 1
+id: 6a13e901-05ac-4b97-863b-f065b50674d9
+name: SALES_ORDER_LINES
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: RAW_MODE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: dfa5edca-46d6-4e1e-8e88-9407bc1eba0c
+          stepCounter: 6a13e901-05ac-4b97-863b-f065b50674d9
+        config: {}
+        dataType: NUMBER(18,0)
+        defaultValue: ""
+        description: ""
+        name: LINE_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0d772620-36c3-44e1-8fb4-a21c1ffb9407
+          stepCounter: 6a13e901-05ac-4b97-863b-f065b50674d9
+        config: {}
+        dataType: NUMBER(6,0)
+        defaultValue: ""
+        description: ""
+        name: ORDER_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 570b074a-9788-4f95-a9a8-37cac9f9dbf7
+          stepCounter: 6a13e901-05ac-4b97-863b-f065b50674d9
+        config: {}
+        dataType: NUMBER(3,0)
+        defaultValue: ""
+        description: ""
+        name: PRODUCT_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 84c18f51-3cfa-4e6e-bd79-6a1f8053b0eb
+          stepCounter: 6a13e901-05ac-4b97-863b-f065b50674d9
+        config: {}
+        dataType: NUMBER(2,0)
+        defaultValue: ""
+        description: ""
+        name: QTY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5635235c-4d2c-4bb6-b1b0-6a4f37fc1fab
+          stepCounter: 6a13e901-05ac-4b97-863b-f065b50674d9
+        config: {}
+        dataType: NUMBER(4,0)
+        defaultValue: ""
+        description: ""
+        name: UNIT_PRICE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a451b1d5-2a36-48c9-8e76-7598124a190f
+          stepCounter: 6a13e901-05ac-4b97-863b-f065b50674d9
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DISCOUNT_PCT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: deff53f9-543f-42ef-a4d4-39bcfc47524e
+          stepCounter: 6a13e901-05ac-4b97-863b-f065b50674d9
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IS_RETURN
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: SALES_ORDER_LINES
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

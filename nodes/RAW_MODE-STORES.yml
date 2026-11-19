@@ -1,0 +1,111 @@
+fileVersion: 1
+id: ec3a4847-39e1-4995-baba-eb6240d99239
+name: STORES
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: RAW_MODE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a5cab3cb-922c-4dbc-8c02-5cd6bd655336
+          stepCounter: ec3a4847-39e1-4995-baba-eb6240d99239
+        config: {}
+        dataType: NUMBER(18,0)
+        defaultValue: ""
+        description: ""
+        name: STORE_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 21e1c02f-9f3d-4156-9e32-6f52c6d3607b
+          stepCounter: ec3a4847-39e1-4995-baba-eb6240d99239
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: STORE_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 96cf828e-a051-406c-bab1-072fb0d5ceb2
+          stepCounter: ec3a4847-39e1-4995-baba-eb6240d99239
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: CITY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ff8ee833-76d8-4696-a4ba-5a73f1e1dc7c
+          stepCounter: ec3a4847-39e1-4995-baba-eb6240d99239
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: COUNTRY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 20d04943-8844-4681-9e01-3c77a022090e
+          stepCounter: ec3a4847-39e1-4995-baba-eb6240d99239
+        config: {}
+        dataType: VARCHAR(10)
+        defaultValue: ""
+        description: ""
+        name: CHANNEL
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: STORES
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

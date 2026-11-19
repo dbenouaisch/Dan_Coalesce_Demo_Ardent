@@ -1,0 +1,111 @@
+fileVersion: 1
+id: 1bd22cb4-05b6-41a4-9f17-ed091f97a27d
+name: MAGASINS
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: RAW_MAISON
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 01c19c85-098c-40b4-aedb-b6151ef0e019
+          stepCounter: 1bd22cb4-05b6-41a4-9f17-ed091f97a27d
+        config: {}
+        dataType: NUMBER(18,0)
+        defaultValue: ""
+        description: ""
+        name: ID_MAGASIN
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 48b4ef3b-2e32-496c-8e22-c27c2696df05
+          stepCounter: 1bd22cb4-05b6-41a4-9f17-ed091f97a27d
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: NOM_MAGASIN
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eef0e746-a7cf-417a-b2d5-b7713d37efac
+          stepCounter: 1bd22cb4-05b6-41a4-9f17-ed091f97a27d
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: VILLE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ca356bbb-f765-4983-881d-0aac1ccf6ac1
+          stepCounter: 1bd22cb4-05b6-41a4-9f17-ed091f97a27d
+        config: {}
+        dataType: VARCHAR(2)
+        defaultValue: ""
+        description: ""
+        name: PAYS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3c40bb32-3fe6-409b-9237-14c9accfd266
+          stepCounter: 1bd22cb4-05b6-41a4-9f17-ed091f97a27d
+        config: {}
+        dataType: VARCHAR(7)
+        defaultValue: ""
+        description: ""
+        name: CANAL
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: MAGASINS
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

@@ -1,0 +1,130 @@
+fileVersion: 1
+id: 3648c049-864b-46e6-b481-67962a1117b0
+name: COMMANDES
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: RAW_MAISON
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 39554a0a-1956-41ae-8da7-68de5edd0457
+          stepCounter: 3648c049-864b-46e6-b481-67962a1117b0
+        config: {}
+        dataType: NUMBER(18,0)
+        defaultValue: ""
+        description: ""
+        name: NUM_COMMANDE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b0c776ef-1ae0-4230-95fb-27a872a1f74a
+          stepCounter: 3648c049-864b-46e6-b481-67962a1117b0
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: DATE_COMMANDE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 00fd8f52-067d-44d2-baef-290a5c257757
+          stepCounter: 3648c049-864b-46e6-b481-67962a1117b0
+        config: {}
+        dataType: NUMBER(5,0)
+        defaultValue: ""
+        description: ""
+        name: ID_CLIENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9cb10812-f160-4013-bcc9-b8303370b0a7
+          stepCounter: 3648c049-864b-46e6-b481-67962a1117b0
+        config: {}
+        dataType: NUMBER(2,0)
+        defaultValue: ""
+        description: ""
+        name: ID_MAGASIN
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 28dbe7be-042a-4fe3-ba1d-8a3642beb301
+          stepCounter: 3648c049-864b-46e6-b481-67962a1117b0
+        config: {}
+        dataType: NUMBER(11,2)
+        defaultValue: ""
+        description: ""
+        name: FRAIS_PORT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bd758bd6-aec8-4bb2-a6df-1b3aed46a54c
+          stepCounter: 3648c049-864b-46e6-b481-67962a1117b0
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: STATUT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: COMMANDES
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
