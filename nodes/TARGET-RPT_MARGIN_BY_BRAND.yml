@@ -1,0 +1,151 @@
+fileVersion: 1
+id: 34153aaa-8ab9-4be6-8949-370615bad670
+name: RPT_MARGIN_BY_BRAND
+operation:
+  config:
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0553a0b7-fae2-4766-999e-c0528322a94b
+          stepCounter: 34153aaa-8ab9-4be6-8949-370615bad670
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: BRAND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0349b7ad-351b-41b8-a61d-1337469400b5
+                stepCounter: eb3ef06c-2e0f-439c-92c7-766d99dc0e72
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f805f8eb-84bd-4c3c-ac46-abe15b77bbbf
+          stepCounter: 34153aaa-8ab9-4be6-8949-370615bad670
+        config: {}
+        dataType: DATE
+        description: ""
+        name: MONTH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32b66958-46f9-4b42-b413-983e6037d602
+                stepCounter: eb3ef06c-2e0f-439c-92c7-766d99dc0e72
+            transform: DATE_TRUNC('MONTH', "FCT_SALES"."ORDER_DATE")
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c6bb3deb-5d00-44aa-afb6-2956d4cea1e2
+          stepCounter: 34153aaa-8ab9-4be6-8949-370615bad670
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CATEGORY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 99154bf1-d45f-4bda-b2be-2a6d7ebf348f
+                stepCounter: eb3ef06c-2e0f-439c-92c7-766d99dc0e72
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 94732fe8-fea6-4235-aa9b-bf6677b40bd9
+          stepCounter: 34153aaa-8ab9-4be6-8949-370615bad670
+        config: {}
+        dataType: NUMBER(12,2)
+        description: ""
+        name: NET_SALES
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 13294e8c-959e-417d-8daf-e281676ef395
+                stepCounter: eb3ef06c-2e0f-439c-92c7-766d99dc0e72
+            transform: SUM("FCT_SALES"."NET_SALES")
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 74b32ff9-4e70-40f0-87df-b8a4f0c5a9da
+          stepCounter: 34153aaa-8ab9-4be6-8949-370615bad670
+        config: {}
+        dataType: NUMBER(12,2)
+        description: ""
+        name: COGS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3065f59a-f7d1-4d9b-9b3e-967b86121681
+                stepCounter: eb3ef06c-2e0f-439c-92c7-766d99dc0e72
+            transform: SUM("FCT_SALES"."COGS")
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 571edc10-0b25-4074-9d03-7ef345df7f1a
+          stepCounter: 34153aaa-8ab9-4be6-8949-370615bad670
+        config: {}
+        dataType: NUMBER(14,2)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: GROSS_MARGIN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: SUM("FCT_SALES"."NET_SALES") - SUM("FCT_SALES"."COGS")
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9be7b0b4-b597-4c45-8f4a-65feaae9a4c8
+          stepCounter: 34153aaa-8ab9-4be6-8949-370615bad670
+        config: {}
+        dataType: NUMBER(8,4)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: MARGIN_PCT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ROUND((SUM("FCT_SALES"."NET_SALES") - SUM("FCT_SALES"."COGS")) / NULLIF(SUM("FCT_SALES"."NET_SALES"), 0), 4)
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          FCT_SALES: eb3ef06c-2e0f-439c-92c7-766d99dc0e72
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: TARGET
+            nodeName: FCT_SALES
+        join:
+          joinCondition: |-
+            FROM {{ ref('TARGET', 'FCT_SALES') }} "FCT_SALES"
+            WHERE "FCT_SALES"."STATUS" = 'COMPLETED'
+              AND NOT "FCT_SALES"."IS_RETURN"   -- returns excluded for BOTH brands (legacy bug fixed)
+            GROUP BY ALL
+        name: RPT_MARGIN_BY_BRAND
+        noLinkRefs: []
+  name: RPT_MARGIN_BY_BRAND
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node
